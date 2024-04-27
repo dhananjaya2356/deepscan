@@ -67,11 +67,11 @@ def home(mtcnn,model):
             result(pred)
         
 def result(pred):
-    st.markdown("<h3 style='text-decoration: underline;'><b>Result:</b></h3>", unsafe_allow_html=True) 
+    st.markdown("<h3 style='text-decoration: underline;'><b>Result :</b></h3>", unsafe_allow_html=True) 
     if pred == "Real":
-        st.markdown("<p style='font-size:24px; color:green;  font-family: Times New Roman, Times, serif;padding-left: 50px;'><b>     Real</b></p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-size:24px; color:green;  font-family: Times New Roman, Times, serif;padding-left: 100px;'><b>Real</b></p>", unsafe_allow_html=True)
     else:
-        st.markdown("<p style='font-size:24px; color:red;  font-family: Times New Roman, Times, serif;padding-left: 50px;'><b>     Fake</b></p>", unsafe_allow_html=True)
+        st.markdown("<p style='font-size:24px; color:red;  font-family: Times New Roman, Times, serif;padding-left: 100px;'><b>Fake</b></p>", unsafe_allow_html=True)
 
 
 

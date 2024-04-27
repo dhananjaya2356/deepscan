@@ -69,10 +69,9 @@ def home(mtcnn,model):
 def result(pred):
     st.markdown("<h3><b>Result</b></h3>", unsafe_allow_html=True) 
     if pred == "Real":
-                st.success(f"**{pred}**")  # Display "Real" prediction in green color
+        st.markdown("<p style='font-size:24px; color:green'><b>Real</b></p>", unsafe_allow_html=True)
     else:
-                st.error(f"**{pred}**")
-
+        st.markdown("<p style='font-size:24px; color:red'><b>Fake</b></p>", unsafe_allow_html=True)
 
 def contact():
     st.markdown(
